@@ -1,0 +1,13 @@
+services:
+  loteria-service:
+    container_name: loteria-service
+    image: loteria-service:1.0.0
+    build: ./modelo-final-lciv-api-loteria-405067-Ignacio-Solis
+    ports:
+    - "8081:8081"
+
+  api-loteria:
+    container_name: api-loteria
+    image: gabrielarriola/api-loteria
+    ports:
+    - "8080:8080"
